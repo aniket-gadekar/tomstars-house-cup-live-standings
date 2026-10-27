@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>House Cup standings · Tomstars</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="top"><div class="brand"><img src="assets/tomstars.png" alt="Tomstars"><i></i><b>House Cup</b></div>
+<nav><a href="admin.html">Admin</a><a class="on" href="index.html">Route to the Cup</a></nav></header>
+<main>
+<section class="hero"><div class="t"><span class="eyebrow"><i></i>Live standings · Route to the Cup</span>
+<h1 id="h1">Loading standings…</h1><p id="sub"></p></div>
+<div class="stats"><div class="stat"><span>Total points</span><b id="total">–</b></div><div class="stat"><span>Entries logged</span><b id="count">–</b></div></div></section>
+<section class="cols">
+<div class="card race"><div class="race-h"><h2>Race to the Cup</h2><span class="legend"><span class="flag"></span>Bars show distance to the leader</span></div><div id="race" style="display:flex;flex-direction:column;gap:28px"></div></div>
+<aside class="card recent"><div class="rh"><h2>Recent entries</h2><span id="shown"></span></div><div class="pills" id="filters"></div><ul class="list" id="log"></ul></aside>
+</section></main>
+<footer id="upd"></footer>
+<script src="common.js"></script>
+<script>
+let entries=[], filter='All';
+function render(){
+  const t=totals(entries), order=ranked(t), lead=t[order[0]]||1;
+  h1.textContent=`${order[0]} leads the House Cup`;
+  sub.textContent=`${fmt(lead-t[order[1]])} pts clear of ${order[1]}, with ${fmt(Object.values(t).reduce((a,b)=>a+b,0))} points scored across all houses.`;
+  total.textContent=fmt(Object.values(t).reduce((a,b)=>a+b,0)); count.textContent=fmt(entries.length);
+  race.innerHTML=order.map((h,i)=>{const c=HOUSES[h];return `<div class="house"><div class="hrow"><div class="hl">${chip(h)}<span class="hname">${c.full}</span><span class="badge" style="background:${i?'#F3F3F4':'#FDC530'}">${i?'#'+(i+1):'Leading'}</span></div><span class="hpts" style="color:${c.text}">${fmt(t[h])} <small>pts</small></span></div>
+  <div class="track"><div class="fill" style="width:${(t[h]/lead*100).toFixed(1)}%;background:${c.tint}"><span class="knob" style="background:${c.solid}">${i+1}</span></div><span class="flag"></span></div>
+  <span class="gap">${i?fmt(lead-t[h])+' pts behind '+order[0]:'Ahead of '+order[1]+' by '+fmt(lead-t[order[1]])+' pts'}</span></div>`}).join('');
+  filters.innerHTML=['All','Blue','White','Red','Green'].map(f=>`<button class="pill" aria-pressed="${f===filter}" data-f="${f}">${f}</button>`).join('');
+  const list=entries.filter(e=>filter==='All'||e.house===filter);
+  shown.textContent=`${list.length} shown`;
+  log.innerHTML=list.slice(0,200).map(e=>`<li>${chip(e.house,'sm')}<div class="li-t"><b>${esc(e.reason)}</b><span>${e.house} · ${esc(e.category)} · ${fdate(e.timestamp)}</span></div><span class="pts">+${fmt(e.points)}</span></li>`).join('');
+}
+filters.onclick=e=>{const f=e.target.dataset.f; if(f){filter=f;render();}};
+async function refresh(){ try{ entries=await loadEntries(); render(); upd.textContent='Updated '+new Date().toLocaleTimeString(); }catch(e){ h1.textContent='Could not load standings'; } }
+refresh(); setInterval(refresh,60000);
+</script></body></html>
