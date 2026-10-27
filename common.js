@@ -49,6 +49,8 @@ function half(f){
   else body=`<div class="tbd">Schedule to be announced</div>`;
   return `<div class="half ${g}"><div class="hh"><b>${f.category}</b>${badge}</div>${body}</div>`;
 }
+const ACC={'Darts':['#DF1B12','#A2140D','#FFF0EF'],'Jenga':['#F08A00','#8A4B00','#FFF3E0'],'Chess':['#4F46E5','#312E81','#EEF0FF'],'Carrom':['#00A0A0','#006A6A','#E6F7F7'],'Pool':['#00874C','#006A3C','#EAF6F0'],'Table Tennis':['#773EF0','#4B1FB8','#F3EDFF']};
 function sportCard(s,list){
-  return `<article class="fm"><header><span class="sico">${ICONS[s]}</span><b>${s}</b></header>${['Men','Women'].map(cat=>half(list.find(x=>x.sport===s&&x.category===cat)||{sport:s,category:cat,status:'TBA'})).join('')}</article>`;
+  const [a,ad,tn]=ACC[s];
+  return `<article class="fm" style="--a:${a};--ad:${ad};--tn:${tn}"><header><span class="sico">${ICONS[s]}</span><b>${s}</b></header>${['Men','Women'].map(cat=>half(list.find(x=>x.sport===s&&x.category===cat)||{sport:s,category:cat,status:'TBA'})).join('')}</article>`;
 }
