@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>House Cup admin · Tomstars</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="top"><div class="brand"><img src="assets/tomstars.png" alt="Tomstars"><i></i><b>House Cup</b></div>
+<nav><a class="on" href="admin.html">Admin</a><a href="index.html">Route to the Cup</a></nav></header>
+<main class="narrow">
+<section style="display:flex;flex-direction:column;gap:8px"><h1 class="sm">Log an entry</h1>
+<p class="muted" style="font-size:16px;line-height:24px">Add points for a house. Changes are drafted in this browser; download <code>entries.json</code> and commit it to <code>data/</code> to publish them on the public page.</p></section>
+<section class="cols">
+<form class="card" id="f">
+<fieldset><legend>House</legend><div class="hgrid" id="hs"></div></fieldset>
+<div class="row"><div><label class="l" for="p">Points</label><input id="p" type="number" inputmode="numeric" placeholder="e.g. 25"></div>
+<div><label class="l" for="c">Category</label><select id="c"><option>Sports</option><option selected>Olympia</option><option>Game</option><option>Post / Content</option><option>Photo</option><option>Participation</option><option>Quiz / Game</option><option>Other</option></select></div></div>
+<div><label class="l" for="r">Reason / activity</label><input id="r" placeholder="e.g. Table Tennis (Men) - Round 1 Win"></div>
+<div><label class="l" for="n">No. of participants</label><input id="n" type="number" inputmode="numeric" placeholder="e.g. 4"></div>
+<div><label class="l" for="m">Participant names</label><textarea id="m" rows="3" placeholder="Comma-separated, e.g. Asha, Rohit, Priya"></textarea></div>
+<p class="msg err" id="err" role="alert" hidden></p><p class="msg ok" id="ok" role="status" hidden></p>
+<button class="cta" type="submit">Add entry</button></form>
+<aside class="card"><h2>Standings</h2><ol id="st" style="list-style:none;margin:0;padding:0"></ol></aside>
+</section>
+<section class="card logsec"><div><h2>Recent entries</h2><p class="muted">Newest first. Deleting removes the entry's points from the draft totals.</p></div>
+<div class="toolbar"><div class="pills" id="fl"></div><input type="search" id="q" aria-label="Search entries" placeholder="Search reason or name"><button class="cta ghost" id="dl" type="button">Download entries.json</button><button class="cta ghost" id="rs" type="button">Discard draft</button></div>
+<ul class="list" id="log" style="max-height:620px"></ul><p class="muted" id="empty" hidden>No entries match.</p></section>
+</main>
+<script src="common.js"></script>
+<script>
+const KEY='housecup-draft'; let entries=[], house='Red', filter='All', q='';
+const $=id=>document.getElementById(id);
+function draw(){
+  const t=totals(entries), o=ranked(t), lead=Math.max(1,t[o[0]]);
+  $('hs').innerHTML=Object.keys(HOUSES).map(h=>`<button type="button" class="hbtn" data-h="${h}" aria-pressed="${h===house}" style="${h===house?`background:${HOUSES[h].chip};border-color:${HOUSES[h].solid}`:''}"><img src="${HOUSES[h].logo}" alt="">${HOUSES[h].full}</button>`).join('');
+  $('st').innerHTML=o.map((h,i)=>`<li><div class="srow"><span class="rk">#${i+1}</span>${chip(h)}<b>${HOUSES[h].full}</b><span class="n" style="color:${HOUSES[h].text}">${fmt(t[h])}</span></div><div class="mini"><div style="width:${(t[h]/lead*100).toFixed(1)}%;background:${HOUSES[h].solid}"></div></div></li>`).join('');
+  $('fl').innerHTML=['All','Red','Green','Blue','White'].map(f=>`<button type="button" class="pill" aria-pressed="${f===filter}" data-f="${f}">${f}</button>`).join('');
+  const s=q.trim().toLowerCase(), list=entries.filter(e=>(filter==='All'||e.house===filter)&&(!s||(e.reason+' '+e.participantNames).toLowerCase().includes(s)));
+  $('log').innerHTML=list.slice(0,300).map(e=>`<li style="flex-wrap:wrap;gap:16px">${chip(e.house,'sm')}<div class="li-t" style="flex:1 1 260px"><b>${esc(e.reason)}</b><span>${e.house} · ${esc(e.category)} · ${e.participantCount} participant${e.participantCount==1?'':'s'}${e.participantNames?' · '+esc(e.participantNames):''} · ${fdate(e.timestamp)}</span></div><span class="pts">+${fmt(e.points)}</span><button class="del" type="button" data-d="${esc(e.id)}" aria-label="Delete entry ${esc(e.reason)}">Delete</button></li>`).join('');
+  $('empty').hidden=list.length>0;
+}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(entries))}catch(e){}};
+function msg(k,t){$('err').hidden=$('ok').hidden=true; if(k){$(k).textContent=t;$(k).hidden=false;}}
+$('hs').onclick=e=>{const b=e.target.closest('[data-h]'); if(b){house=b.dataset.h;msg();draw();}};
+$('fl').onclick=e=>{const f=e.target.dataset.f; if(f){filter=f;draw();}};
+$('q').oninput=e=>{q=e.target.value;draw();};
+$('log').onclick=e=>{const d=e.target.closest('[data-d]'); if(d){entries=entries.filter(x=>x.id!==d.dataset.d);save();draw();}};
+$('f').onsubmit=e=>{e.preventDefault();
+  const pts=parseInt($('p').value,10), reason=$('r').value.trim();
+  if(!pts) return msg('err','Enter a points value.'); if(!reason) return msg('err','Enter a reason or activity.');
+  entries.unshift({id:crypto.randomUUID(),house,points:pts,reason,category:$('c').value,participantCount:parseInt($('n').value,10)||0,participantNames:$('m').value.trim(),timestamp:new Date().toISOString()});
+  save(); ['p','r','n','m'].forEach(i=>$(i).value=''); msg('ok','Entry added for '+HOUSES[house].full+'.'); draw();};
+$('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(entries,null,1)],{type:'application/json'}));a.download='entries.json';a.click();};
+$('rs').onclick=async()=>{try{localStorage.removeItem(KEY)}catch(e){} entries=await loadEntries(); draw();};
+(async()=>{let d=null;try{d=JSON.parse(localStorage.getItem(KEY))}catch(e){} entries=Array.isArray(d)?d:await loadEntries(); draw();})();
+</script></body></html>
