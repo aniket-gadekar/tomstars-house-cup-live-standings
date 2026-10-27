@@ -93,3 +93,10 @@ ul.list{max-height:none;height:560px}
 ul.list li{padding:6px 0;gap:10px}.li-t b{font-size:13px;line-height:18px}
 .recent{gap:12px}
 @media(prefers-reduced-motion:reduce){.livetag i{animation:none}}
+
+.upd{font-size:13px;font-weight:600;color:var(--ink-low)}
+aside.recent{flex:0 0 30%;min-width:320px}.card.race{flex:1 1 0}
+.recent .pills{flex-wrap:nowrap;gap:6px}.recent .pill{flex:1 1 0;min-width:0;padding:0 8px;font-size:12px}
+.li-t em{font-style:normal;color:var(--ink-low);font-weight:400}
+footer{padding:24px 0 32px;font-size:13px}
+@media(max-width:1000px){aside.recent{flex:1 1 100%}}
