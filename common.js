@@ -39,7 +39,7 @@ const MEDAL=`<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
 function finalRow(f){
   const hl=(n,h)=>`<span class="pl">${h&&HOUSES[h]?chip(h,'xs'):''}<span>${esc(n)}</span></span>`;
   const tag=`<div class="ftag"><b>${f.category==='Men'?'Men':'Women'}</b></div>`;
-  if(f.winner) return `<div class="frow done">${tag}<span class="st">Final complete</span></div>
+  if(f.winner) return `<div class="frow done">${tag}<span class="st">${f.date&&f.date!=='Today'?'Completed · '+esc(f.date.replace(/ 2026$/,'')):'Final complete'}</span></div>
     <div class="win"><span class="ic gold">${TROPHY}</span>${hl(f.winner,f.winnerHouse)}<span class="pt">+100</span></div>
     <div class="win ru"><span class="ic silver">${MEDAL}</span>${hl(f.runnerUp,f.runnerUpHouse)}<span class="pt">+50</span></div>`;
   if(f.status==='Scheduled'){
