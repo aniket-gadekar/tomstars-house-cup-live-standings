@@ -14,4 +14,10 @@ function houseStats(entries){ const s={}; Object.keys(HOUSES).forEach(h=>s[h]={a
   entries.forEach(e=>{ const x=s[e.house]; if(!x)return; x.acts++;
     String(e.participantNames||'').replace(/\([^)]*\)/g,'').split(/,|&|;|\band\b/i).map(n=>n.trim().toLowerCase().replace(/\s+/g,' ')).filter(Boolean).forEach(n=>x.set.add(n)); });
   Object.values(s).forEach(x=>x.people=x.set.size); return s; }
-async function loadEntries(){ const r = await fetch('data/entries.json',{cache:'no-store'}); return r.json().then(d=>d.sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp))); }
+async function loadEntries(){ const r = await fetch('data/entries.json?t='+Date.now(),{cache:'no-store'}); return r.json().then(d=>d.sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp))); }
+
+function entryTitle(e){
+  const m=/^(.*?)\s*-\s*(Round \d+)\s*Win$/i.exec(e.reason||''), n=(e.participantNames||'').trim();
+  if(m&&n) return `${esc(n)} won ${esc(m[2])} <em>${esc(m[1])}</em>`;
+  return esc(e.reason);
+}

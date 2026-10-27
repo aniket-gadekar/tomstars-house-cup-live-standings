@@ -1,6 +1,6 @@
 """Convert the scores workbook (Entries sheet) into data/entries.json."""
 import json, sys, datetime, openpyxl
-src = sys.argv[1] if len(sys.argv) > 1 else "data/Tomstars_House_Cup_2026_scores.xlsx"
+src = sys.argv[1] if len(sys.argv) > 1 else "data/Tomstars_House_Cup_2026_Entries_Win_Log.xlsx"
 ws = openpyxl.load_workbook(src, data_only=True)["Entries"]
 out = []
 for r in list(ws.iter_rows(values_only=True))[1:]:
