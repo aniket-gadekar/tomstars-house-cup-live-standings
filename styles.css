@@ -100,3 +100,31 @@ aside.recent{flex:0 0 30%;min-width:320px}.card.race{flex:1 1 0}
 .li-t em{font-style:normal;color:var(--ink-low);font-weight:400}
 footer{padding:24px 0 32px;font-size:13px}
 @media(max-width:1000px){aside.recent{flex:1 1 100%}}
+@media(min-width:1000px){
+html,body{height:100%;overflow:hidden}
+body{display:flex;flex-direction:column;min-height:0}
+header.top{padding:8px 32px;flex:none}header.top .brand img{height:24px}
+main{flex:1;min-height:0;padding:12px 32px 4px;gap:12px}
+.eyebrow{display:none}
+.hero{align-items:center}.hero .t{gap:2px}
+h1{font-size:clamp(28px,4.2vh,44px);line-height:1.15}
+.leadline{font-size:clamp(16px,2.4vh,22px);line-height:1.3}
+.hero p{font-size:14px;line-height:20px}
+.stats .stat{padding:8px 16px;border-radius:12px}.stat b{font-size:22px}
+.cards{gap:12px}.hcard{padding:12px 20px;gap:8px;border-radius:16px}
+.hc-top b{font-size:18px}.letter{width:34px;height:34px;font-size:18px;border-radius:10px}
+.hc-n strong{font-size:clamp(20px,3.2vh,28px)}
+.cols{flex:1;min-height:0;align-items:stretch;gap:16px;flex-wrap:nowrap}
+.card.race{padding:16px 24px;gap:0;justify-content:space-between;min-height:0}
+#race{gap:0!important;flex:1;justify-content:space-around}
+.house{gap:6px}.hname{font-size:clamp(16px,2.6vh,22px)}.hpts{font-size:clamp(18px,3vh,26px)}
+.chip{width:40px;height:34px;font-size:18px}.chip.sm{width:24px;height:24px;font-size:12px}
+.track,.knob{height:clamp(28px,4vh,40px)}.knob{width:clamp(28px,4vh,40px)}.track .flag{top:50%;margin-top:-8px}
+.gap{font-size:12px}
+aside.recent{padding:14px 16px 8px;gap:8px;min-height:0}
+aside.recent .pill{min-height:34px}
+ul.list{height:auto;flex:1;min-height:0}
+ul.list li{padding:4px 0}
+footer{flex:none;padding:6px 0 8px;font-size:12px}
+}
+@media(min-width:1000px){.race-h{margin-bottom:10px}.knob{margin:-1px -1px -1px 0}}
