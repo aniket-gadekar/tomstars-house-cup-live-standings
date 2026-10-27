@@ -39,15 +39,16 @@ const MEDAL=`<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"
 const PIN=`<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-6.100 7-11a7 7 0 0 0-14 0c0 4.900 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>`;
 const mins=t=>{const m=/(\d+):(\d+)\s*(AM|PM)/i.exec(t||'');return m?((+m[1]%12)+(/pm/i.test(m[3])?12:0))*60+ +m[2]:9999;};
 const finalGroup=f=>f.winner?'done':f.status==='Scheduled'?'up':'tba';
-function player(n,h){ return `<div class="pl2">${chip(h,'')}<div><b>${esc(n)}</b><small>${HOUSES[h].full}</small></div></div>`; }
-function finalCard(f){
+function pl(n,h,cls=''){ return `<div class="pl2 ${cls}">${chip(h,'')}<div><b>${esc(n)}</b><small>${HOUSES[h].full}</small></div></div>`; }
+function half(f){
   const g=finalGroup(f), when=f.time||(f.date==='Tomorrow'?'Tomorrow':'');
-  const head=`<header><span class="sico">${ICONS[f.sport]}</span><div class="ft"><b>${f.sport}</b><span>${f.category}</span></div>${g==='up'?`<span class="when">${esc(when)}</span>`:g==='done'?`<span class="st done">${f.date&&f.date!=='Today'?esc(f.date.replace(/ 2026$/,'')):'Today'}</span>`:`<span class="st">TBA</span>`}</header>`;
+  const badge=g==='up'?`<span class="when">${esc(when)}</span>`:g==='done'?`<span class="st done">${f.date&&f.date!=='Today'?'Done · '+esc(f.date.replace(/ 2026$/,'')):'Final complete'}</span>`:`<span class="st">TBA</span>`;
   let body;
-  if(g==='done') body=`<div class="res win1"><span class="ic gold">${TROPHY}</span>${player(f.winner,f.winnerHouse)}<span class="pt">+100</span></div><div class="res"><span class="ic silver">${MEDAL}</span>${player(f.runnerUp,f.runnerUpHouse)}<span class="pt">+50</span></div>`;
-  else if(g==='up') body=`<div class="venue">${f.date==='Tomorrow'&&f.time?'Tomorrow · ':''}${PIN}${esc(f.venue||'Venue to be announced')}${f.date==='Tomorrow'&&!f.time?'':''}</div>`+(f.player1?`<div class="match">${player(f.player1,f.house1)}<i>VS</i>${player(f.player2,f.house2)}</div>`:`<div class="tbd">Finalists to be announced</div>`);
+  if(g==='done') body=`<div class="res win1"><span class="ic gold">${TROPHY}</span>${pl(f.winner,f.winnerHouse)}<span class="pt">+100</span></div><div class="res"><span class="ic silver">${MEDAL}</span>${pl(f.runnerUp,f.runnerUpHouse)}<span class="pt">+50</span></div>`;
+  else if(g==='up') body=`<div class="venue">${PIN}${esc(f.venue||'Venue TBA')}</div>`+(f.player1?`<div class="match">${pl(f.player1,f.house1)}<i>VS</i>${pl(f.player2,f.house2)}</div>`:`<div class="tbd">Finalists to be announced</div>`);
   else body=`<div class="tbd">Schedule to be announced</div>`;
-  return `<article class="fm ${g}">${head}${body}</article>`;
+  return `<div class="half ${g}"><div class="hh"><b>${f.category}</b>${badge}</div>${body}</div>`;
 }
-function finalsOf(list,g){ const a=list.filter(f=>finalGroup(f)===g);
-  if(g==='up') a.sort((x,y)=>(x.date==='Tomorrow')-(y.date==='Tomorrow')||mins(x.time)-mins(y.time)); return a; }
+function sportCard(s,list){
+  return `<article class="fm"><header><span class="sico">${ICONS[s]}</span><b>${s}</b></header>${['Men','Women'].map(cat=>half(list.find(x=>x.sport===s&&x.category===cat)||{sport:s,category:cat,status:'TBA'})).join('')}</article>`;
+}
