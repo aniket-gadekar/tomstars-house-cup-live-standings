@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Road to the Final · House Cup 2026</title><link rel="stylesheet" href="dashboard.css?v=1793095512"></head>
+<body class="jpage">
+<header class="top"><div class="brand"><img src="assets/tomstars.png" alt="Tomstars"></div>
+<div class="ttl"><h1>Road to the Final</h1><p class="sub">Follow every player through the rounds, from first match to the Final</p></div>
+<div class="hr"><a class="navlink" href="index.html">← Live standings</a></div></header>
+<main class="jmain">
+<div class="jbar"><div class="gtabs" id="gtabs" role="tablist"></div>
+<div class="jtools"><div class="pills" id="hf"></div><input type="search" id="q" aria-label="Find a player" placeholder="Find a player…" list="plist"><datalist id="plist"></datalist></div></div>
+<section class="card jcard"><div class="jpath" id="jpath"></div><div class="board" id="board"></div></section>
+</main>
+<footer>Names in a column are the players recorded in that round on the fixture sheet. Click a player to trace their path.</footer>
+<script src="common.js?v=1793095499"></script>
+<script>
+let G=[], gi=0, hf='All', sel='';
+const HF=['All','Blue','White','Green','Red'];
+const norm=s=>s.toLowerCase();
+const ccol=h=>h?HOUSES[h].solid:'#B3B3C0';
+const pchip=(h)=>`<span class="chip sm2" style="background:${ccol(h)}">${h?h[0]:'?'}</span>`;
+function path(g,name){ const hits=g.stages.map(s=>s.players.some(p=>norm(p.name)===norm(name))); return hits; }
+function render(){
+  const g=G[gi];
+  gtabs.innerHTML=G.map((x,i)=>`<button class="gtab" role="tab" aria-selected="${i===gi}" data-i="${i}"><span class="sico">${ICONS[x.sport]}</span><span><b>${x.sport}</b><small>${x.category}</small></span></button>`).join('');
+  hf_.innerHTML=HF.map(h=>`<button class="pill" aria-pressed="${h===hf}" data-h="${h}">${h}</button>`).join('');
+  plist.innerHTML=[...new Set(g.stages.flatMap(s=>s.players.map(p=>p.name)))].sort().map(n=>`<option value="${esc(n)}">`).join('');
+  const champ=g.champion?norm(g.champion.name):'', ru=g.runnerUp?norm(g.runnerUp.name):'';
+  const last=g.stages.length-1;
+  board.innerHTML=g.stages.map((s,k)=>{
+    const split=HF.slice(1).map(h=>({h,n:s.players.filter(p=>p.house===h).length})), tot=s.players.length||1;
+    const bar=split.map(x=>x.n?`<i style="flex:${x.n};background:${HOUSES[x.h].solid}" title="${x.h}: ${x.n}"></i>`:'').join('')+(s.players.some(p=>!p.house)?`<i style="flex:${s.players.filter(p=>!p.house).length};background:#CCC"></i>`:'');
+    const rows=s.players.map(p=>{
+      const on=sel&&norm(p.name)===norm(sel), dim=(hf!=='All'&&p.house!==hf)||(sel&&!on);
+      const crown=k===last&&norm(p.name)===champ?`<span class="ic gold">${TROPHY}</span>`:k===last&&norm(p.name)===ru?`<span class="ic silver">${MEDAL}</span>`:'';
+      return `<li class="pr${on?' sel':''}${dim?' dim':''}" data-n="${esc(p.name)}" tabindex="0">${pchip(p.house)}<span class="nm">${esc(p.name)}</span>${crown}</li>`;}).join('');
+    return `<div class="col${k===last?' fin':''}"><div class="ch"><b>${esc(s.name)}</b><span>${s.players.length}</span></div><div class="cbar">${bar}</div><ul>${rows}</ul></div>`;
+  }).join('')+(g.champion?`<div class="col champ"><div class="ch"><b>Champion</b></div><div class="cup"><span class="ic gold big">${TROPHY}</span>${pchip(g.champion.house)}<b>${esc(g.champion.name)}</b><small>${HOUSES[g.champion.house].full}</small><span class="pt">+100</span></div></div>`:`<div class="col champ"><div class="ch"><b>Champion</b></div><div class="cup tbd2"><span class="ic big" style="color:#CCC">${TROPHY}</span><small>To be decided</small></div></div>`);
+  // journey strip
+  if(sel){
+    const hits=path(g,sel), furthest=hits.lastIndexOf(true), p=g.stages.flatMap(s=>s.players).find(p=>norm(p.name)===norm(sel));
+    const isChamp=norm(sel)===champ;
+    jpath.innerHTML=`<div class="who">${pchip(p&&p.house)}<div><b>${esc(p?p.name:sel)}</b><small>${p&&p.house?HOUSES[p.house].full:'House not listed'}</small></div></div><div class="steps">${g.stages.map((s,k)=>`<span class="step${hits[k]?' on':''}">${esc(s.name)}</span>`).join('<i>›</i>')}<i>›</i><span class="step${isChamp?' on gold':''}">Champion</span></div><span class="result">${isChamp?'Champion':furthest<0?'Not recorded':furthest===last?(norm(sel)===ru?'Runner-up':'Reached the Final'):'Out after '+g.stages[furthest].name}</span><button class="clear" id="clr">Clear</button>`;
+    jpath.hidden=false;
+    document.querySelectorAll('.col ul').forEach(ul=>{const e=ul.querySelector('.sel'); if(e) ul.scrollTop=e.offsetTop-ul.clientHeight/2;});
+  } else { jpath.hidden=true; }
+}
+const hf_=document.getElementById('hf');
+gtabs.onclick=e=>{const b=e.target.closest('[data-i]'); if(b){gi=+b.dataset.i;sel='';q.value='';render();}};
+hf_.onclick=e=>{const h=e.target.dataset.h; if(h){hf=h;render();}};
+board.onclick=e=>{const li=e.target.closest('[data-n]'); if(li){sel=sel===li.dataset.n?'':li.dataset.n;q.value=sel;render();}};
+board.onkeydown=e=>{if(e.key==='Enter'){const li=e.target.closest('[data-n]'); if(li)li.click();}};
+q.oninput=()=>{const v=q.value.trim(); const hit=G[gi].stages.flatMap(s=>s.players).find(p=>norm(p.name)===norm(v)); sel=hit?hit.name:''; render();};
+jpath.onclick=e=>{if(e.target.id==='clr'){sel='';q.value='';render();}};
+fetch('data/journeys.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{G=d.games;render();}).catch(e=>{board.textContent='Could not load journeys';console.error(e);});
+</script></body></html>
