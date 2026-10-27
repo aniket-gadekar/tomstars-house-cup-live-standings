@@ -9,5 +9,9 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt
 const fdate = t => { const d = new Date(t); return isNaN(d) ? '' : d.toLocaleDateString('en-GB',{day:'numeric',month:'short'}); };
 function totals(entries){ const t={Blue:0,White:0,Red:0,Green:0}; entries.forEach(e=>{ if(e.house in t) t[e.house]+=Number(e.points)||0; }); return t; }
 const ranked = t => Object.keys(t).sort((a,b)=>t[b]-t[a]);
-const chip = (h,cls='') => `<span class="chip ${cls}" style="background:${HOUSES[h].chip}"><img src="${HOUSES[h].logo}" alt=""></span>`;
-async function loadEntries(){ const r = await fetch('data/entries.json',{cache:'no-store'}); return r.json(); }
+const chip = (h,cls='') => `<span class="chip ${cls}" style="background:${HOUSES[h].solid}" aria-label="${h}">${h[0]}</span>`;
+function houseStats(entries){ const s={}; Object.keys(HOUSES).forEach(h=>s[h]={acts:0,set:new Set()});
+  entries.forEach(e=>{ const x=s[e.house]; if(!x)return; x.acts++;
+    String(e.participantNames||'').replace(/\([^)]*\)/g,'').split(/,|&|;|\band\b/i).map(n=>n.trim().toLowerCase().replace(/\s+/g,' ')).filter(Boolean).forEach(n=>x.set.add(n)); });
+  Object.values(s).forEach(x=>x.people=x.set.size); return s; }
+async function loadEntries(){ const r = await fetch('data/entries.json',{cache:'no-store'}); return r.json().then(d=>d.sort((a,b)=>new Date(b.timestamp)-new Date(a.timestamp))); }
