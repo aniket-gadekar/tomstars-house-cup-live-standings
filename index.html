@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>House Cup 2026 - Live Standings</title><link rel="stylesheet" href="dashboard.css?v=1793095037"></head>
+<title>House Cup 2026 - Live Standings</title><link rel="stylesheet" href="dashboard.css?v=1793095512"></head>
 <body>
 <header class="top"><div class="brand"><img src="assets/tomstars.png" alt="Tomstars"></div>
 <div class="ttl"><h1>House Cup 2026 - Live Standings<span class="live"><i></i>LIVE</span></h1><p class="sub" id="sub"></p></div>
-<div class="hr"><div class="stats"><div class="stat"><span>Total points</span><b id="total">–</b></div><div class="stat"><span>Entries logged</span><b id="count">–</b></div></div><span class="upd" id="upd"></span></div></header>
+<div class="hr"><a class="navlink" href="journeys.html">Player journeys →</a><div class="stats"><div class="stat"><span>Total points</span><b id="total">–</b></div><div class="stat"><span>Entries logged</span><b id="count">–</b></div></div><span class="upd" id="upd"></span></div></header>
 <main>
 <div class="grid">
 <section class="card finals" aria-label="Grand Finals">
@@ -15,7 +15,7 @@
 <aside class="card recent"><div class="rh"><h2>Recent entries</h2><span id="shown"></span></div><div class="pills" id="filters"></div><ul class="list" id="log"></ul></aside>
 </div></div></main>
 <footer>Created with 💖 by Tomstars 2026</footer>
-<script src="common.js?v=1793095012"></script>
+<script src="common.js?v=1793095499"></script>
 <script>
 let entries=[], finals=[], filter='All';
 function renderFinalsPanel(){ fgrid.innerHTML=['Darts','Jenga','Chess','Carrom','Pool','Table Tennis'].map(s=>sportCard(s,finals)).join(''); }

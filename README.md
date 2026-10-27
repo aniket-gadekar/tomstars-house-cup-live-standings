@@ -8,3 +8,7 @@ Static site (no build step), hosted with GitHub Pages.
 
 ## Updating scores
 Replace `data/entries.json` (from the admin page download, or via the script) and commit to `main`; Pages redeploys in about a minute.
+
+## Player journeys
+`journeys.html` visualises each tournament round by round. Data comes from the fixture workbooks in `data/fixtures/`:
+`python3 scripts/build_journeys.py` (run after `build_data.py`) regenerates `data/journeys.json`.

@@ -1,0 +1,2086 @@
+{
+ "games": [
+  {
+   "id": "tt-men",
+   "sport": "Table Tennis",
+   "category": "Men",
+   "stages": [
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Syednaqi",
+       "house": "Red"
+      },
+      {
+       "name": "Nitin Borade",
+       "house": null
+      },
+      {
+       "name": "Atish Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Ankur Mayur",
+       "house": null
+      },
+      {
+       "name": "Mohammadali Aba",
+       "house": "Blue"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Rahul Patil",
+       "house": "White"
+      },
+      {
+       "name": "Abhijit Kadam",
+       "house": "Blue"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Soham Rumane",
+       "house": "Red"
+      },
+      {
+       "name": "Jayesh Mahajan",
+       "house": "White"
+      },
+      {
+       "name": "Sandeep Patil",
+       "house": null
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Hiraman Chorghade",
+       "house": "Blue"
+      },
+      {
+       "name": "Rahul Dugal",
+       "house": "Green"
+      },
+      {
+       "name": "Milind Chawre",
+       "house": "Red"
+      },
+      {
+       "name": "Kuldeep Dimble",
+       "house": null
+      },
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Rajesh kumar",
+       "house": "Blue"
+      },
+      {
+       "name": "Saddat Bisati",
+       "house": "Red"
+      },
+      {
+       "name": "Somnath Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Nitinkumar Waghmare",
+       "house": "White"
+      },
+      {
+       "name": "Mandar Hiremath",
+       "house": "Blue"
+      },
+      {
+       "name": "Amir Raza Shaikh",
+       "house": "White"
+      },
+      {
+       "name": "Vikas Sakhare",
+       "house": "Red"
+      },
+      {
+       "name": "Ashok Salve",
+       "house": "Blue"
+      },
+      {
+       "name": "Vrushal Fadanvis",
+       "house": "White"
+      },
+      {
+       "name": "Sangram Dedge",
+       "house": "White"
+      },
+      {
+       "name": "Rahul Zingade",
+       "house": null
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Syednaqi",
+       "house": "Red"
+      },
+      {
+       "name": "Atish Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Mohammadali",
+       "house": "Blue"
+      },
+      {
+       "name": "Rahul Patil",
+       "house": "White"
+      },
+      {
+       "name": "Satyam Kesa",
+       "house": "White"
+      },
+      {
+       "name": "Jayesh Mahajan",
+       "house": "White"
+      },
+      {
+       "name": "Hiraman Chorghade",
+       "house": "Blue"
+      },
+      {
+       "name": "Milind Chawre",
+       "house": "Red"
+      },
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Rajesh kumar",
+       "house": "Blue"
+      },
+      {
+       "name": "Somnath Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Mandar Hiremath",
+       "house": "Blue"
+      },
+      {
+       "name": "Vikas Sakhare",
+       "house": "Red"
+      },
+      {
+       "name": "Ashok Salve",
+       "house": "Blue"
+      },
+      {
+       "name": "Sangram Dedge",
+       "house": "White"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Round 3",
+     "players": [
+      {
+       "name": "Syednaqi",
+       "house": "Red"
+      },
+      {
+       "name": "Mohammadali",
+       "house": "Blue"
+      },
+      {
+       "name": "Satyam Kesa",
+       "house": "White"
+      },
+      {
+       "name": "Milind Chawre",
+       "house": "Red"
+      },
+      {
+       "name": "Rajesh kumar",
+       "house": "Blue"
+      },
+      {
+       "name": "Somnath Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Vikas Sakhare",
+       "house": "Red"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Syednaqi",
+       "house": "Red"
+      },
+      {
+       "name": "Satyam Kesa",
+       "house": "White"
+      },
+      {
+       "name": "Rajesh kumar",
+       "house": "Blue"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Satyam Kesa",
+       "house": "White"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      }
+     ]
+    }
+   ],
+   "champion": null,
+   "runnerUp": null
+  },
+  {
+   "id": "tt-women",
+   "sport": "Table Tennis",
+   "category": "Women",
+   "stages": [
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Swati Gosavi",
+       "house": null
+      },
+      {
+       "name": "Anagha Joshi",
+       "house": "Green"
+      },
+      {
+       "name": "Shinny Dsouza",
+       "house": "White"
+      },
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Kalyani Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Kiran Ahire",
+       "house": "Green"
+      },
+      {
+       "name": "Niharika Gaur",
+       "house": "Red"
+      },
+      {
+       "name": "Shristi painaik",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Anagha Joshi",
+       "house": "Green"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Kalyani Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Shristi painaik",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Shristi painaik",
+       "house": "Green"
+      },
+      {
+       "name": "Kalyani Patil",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Shristi painaik",
+       "house": "Green"
+      }
+     ]
+    }
+   ],
+   "champion": null,
+   "runnerUp": null
+  },
+  {
+   "id": "carrom-men",
+   "sport": "Carrom",
+   "category": "Men",
+   "stages": [
+    {
+     "name": "Entered",
+     "players": [
+      {
+       "name": "Abhijeet More",
+       "house": "Blue"
+      },
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Abhijeet Thite",
+       "house": "White"
+      },
+      {
+       "name": "Amit Khopade",
+       "house": "Red"
+      },
+      {
+       "name": "Abhijit Kadam",
+       "house": "Blue"
+      },
+      {
+       "name": "Arunkumar Virkar",
+       "house": "Green"
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Aniket Gadekar",
+       "house": "Red"
+      },
+      {
+       "name": "Ajinkya Shinde",
+       "house": "Blue"
+      },
+      {
+       "name": "Balkrishna Waje",
+       "house": "Green"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Balasaheb Chandanshive",
+       "house": "Red"
+      },
+      {
+       "name": "Amit Kulkarni",
+       "house": "Blue"
+      },
+      {
+       "name": "Bhaskar Nadargi",
+       "house": "Green"
+      },
+      {
+       "name": "Srinivasu Koppada",
+       "house": "White"
+      },
+      {
+       "name": "Bhumayya Maheshwaram",
+       "house": "Red"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      },
+      {
+       "name": "Bhumendra Bisen",
+       "house": "Green"
+      },
+      {
+       "name": "Anant Raut",
+       "house": "White"
+      },
+      {
+       "name": "Sushant Navale",
+       "house": "Red"
+      },
+      {
+       "name": "Ashok Salve",
+       "house": "Blue"
+      },
+      {
+       "name": "Jaiprakash Gulunjkar",
+       "house": "Green"
+      },
+      {
+       "name": "Somnath Pawar",
+       "house": "White"
+      },
+      {
+       "name": "Devendrasingh Thakur",
+       "house": "Red"
+      },
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Mayank Maheshwari",
+       "house": "Green"
+      },
+      {
+       "name": "Arrivuraj K",
+       "house": "White"
+      },
+      {
+       "name": "Ganesh Budkhale",
+       "house": "Red"
+      },
+      {
+       "name": "Swarup Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Nishant Agarwal",
+       "house": "Green"
+      },
+      {
+       "name": "Jayesh Mahajan",
+       "house": "White"
+      },
+      {
+       "name": "Harikrishnans Krishnans",
+       "house": "Red"
+      },
+      {
+       "name": "Milind Kajarekar",
+       "house": "Blue"
+      },
+      {
+       "name": "Rahul Dugal",
+       "house": "Green"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Narendra Kalekar",
+       "house": "Red"
+      },
+      {
+       "name": "Hiraman Chorghade",
+       "house": "Blue"
+      },
+      {
+       "name": "Mangesh Kumbhar",
+       "house": "Green"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      },
+      {
+       "name": "Nitin Lokhande",
+       "house": "Red"
+      },
+      {
+       "name": "Mohit Shetty",
+       "house": "Blue"
+      },
+      {
+       "name": "Sawan Darekar",
+       "house": "Green"
+      },
+      {
+       "name": "Nitinkumar Waghmare",
+       "house": "White"
+      },
+      {
+       "name": "Swapnil Mali",
+       "house": "Red"
+      },
+      {
+       "name": "Tarun Paharia",
+       "house": "Green"
+      },
+      {
+       "name": "Prabhakar Chaudhari",
+       "house": "White"
+      },
+      {
+       "name": "Rahul Wabale",
+       "house": "Red"
+      },
+      {
+       "name": "Sumeet Thorat",
+       "house": "Blue"
+      },
+      {
+       "name": "Vikram Makhare",
+       "house": "Green"
+      },
+      {
+       "name": "Rahul Patil",
+       "house": "White"
+      },
+      {
+       "name": "Ritesh Nalawade",
+       "house": "Red"
+      },
+      {
+       "name": "Mandar Hiremath",
+       "house": "Blue"
+      },
+      {
+       "name": "Yogesh Aher",
+       "house": "Green"
+      },
+      {
+       "name": "Rashtrapal Wankhede",
+       "house": "White"
+      },
+      {
+       "name": "Rahul Kapurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Vilas Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Satish Satam",
+       "house": "White"
+      },
+      {
+       "name": "Sadashiv Tukanawar",
+       "house": "Red"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Saddat Bisati",
+       "house": "Red"
+      },
+      {
+       "name": "Dishant Arora",
+       "house": "Blue"
+      },
+      {
+       "name": "Mayur Mandape",
+       "house": "Red"
+      },
+      {
+       "name": "Shripad Patil",
+       "house": "White"
+      },
+      {
+       "name": "Shekhar Agarwal",
+       "house": "Red"
+      },
+      {
+       "name": "Siddhant Kamble",
+       "house": "White"
+      },
+      {
+       "name": "Siddharam Birajdar",
+       "house": "Red"
+      },
+      {
+       "name": "Surya Rana",
+       "house": "White"
+      },
+      {
+       "name": "Soham Rumane",
+       "house": "Red"
+      },
+      {
+       "name": "Vrushal Fadanvis",
+       "house": "White"
+      },
+      {
+       "name": "Suraj Patil",
+       "house": "Red"
+      },
+      {
+       "name": "Ravindra Shinde",
+       "house": "White"
+      },
+      {
+       "name": "Vicky Dulgaj",
+       "house": "Red"
+      },
+      {
+       "name": "Vikas Sakhare",
+       "house": "Red"
+      },
+      {
+       "name": "Deepak Nikam",
+       "house": "Red"
+      },
+      {
+       "name": "Nehul Oswal",
+       "house": "Red"
+      }
+     ]
+    },
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Abhijeet Thite",
+       "house": "White"
+      },
+      {
+       "name": "Amit Kulkarni",
+       "house": "Blue"
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Bhumayya Maheshwaram",
+       "house": "Red"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      },
+      {
+       "name": "Deepak Nikam",
+       "house": "Red"
+      },
+      {
+       "name": "Ashok Salve",
+       "house": "Blue"
+      },
+      {
+       "name": "Vrushal Fadanvis",
+       "house": "White"
+      },
+      {
+       "name": "Vicky Dulgaj",
+       "house": "Red"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      },
+      {
+       "name": "Prabhakar Chaudhari",
+       "house": "White"
+      },
+      {
+       "name": "Sawan Darekar",
+       "house": "Green"
+      },
+      {
+       "name": "Soham Rumane",
+       "house": "Red"
+      },
+      {
+       "name": "Abhijit Kadam",
+       "house": "Blue"
+      },
+      {
+       "name": "Rahul Patil",
+       "house": "White"
+      },
+      {
+       "name": "Milind Kajarekar",
+       "house": "Blue"
+      },
+      {
+       "name": "Ritesh Nalawade",
+       "house": "Red"
+      },
+      {
+       "name": "Ravindra Shinde",
+       "house": "White"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Yogesh Aher",
+       "house": "Green"
+      },
+      {
+       "name": "Rashtrapal Wankhede",
+       "house": "White"
+      },
+      {
+       "name": "Devendrasingh Thakur",
+       "house": "Red"
+      },
+      {
+       "name": "Mayur Mandape",
+       "house": "Red"
+      },
+      {
+       "name": "Rahul Dugal",
+       "house": "Green"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Mangesh Kumbhar",
+       "house": "Green"
+      },
+      {
+       "name": "Swarup Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Mandar Hiremath",
+       "house": "Blue"
+      },
+      {
+       "name": "Narendra Kalekar",
+       "house": "Red"
+      },
+      {
+       "name": "Vishal Godse",
+       "house": "White"
+      },
+      {
+       "name": "Siddhant Kamble",
+       "house": "White"
+      },
+      {
+       "name": "Vilas Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Ganesh Budkhale",
+       "house": "Red"
+      },
+      {
+       "name": "Niitin Alhat",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Amit Kulkarni",
+       "house": "Blue"
+      },
+      {
+       "name": "Bhumayya Maheshwaram",
+       "house": "Red"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashok Salve",
+       "house": "Blue"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      },
+      {
+       "name": "Sawan Darekar",
+       "house": "Green"
+      },
+      {
+       "name": "Soham Rumane",
+       "house": "Red"
+      },
+      {
+       "name": "Milind Kajarekar",
+       "house": "Blue"
+      },
+      {
+       "name": "Ritesh Nalawade",
+       "house": "Red"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Rashtrapal Wankhede",
+       "house": "White"
+      },
+      {
+       "name": "Mayur Mandape",
+       "house": "Red"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Swarup Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Narendra Kalekar",
+       "house": "Red"
+      },
+      {
+       "name": "Siddhant Kamble",
+       "house": "White"
+      },
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Niitin Alhat",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Round 3",
+     "players": [
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Ankit Tyagi",
+       "house": "Blue"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      },
+      {
+       "name": "Soham Rumane",
+       "house": "Red"
+      },
+      {
+       "name": "Milind Kajarekar",
+       "house": "Blue"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Narendra Kalekar",
+       "house": "Red"
+      },
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Niitin Alhat",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Ali Jawadi",
+       "house": "Green"
+      },
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Narendra Kalekar",
+       "house": "Red"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Rohit Mane",
+       "house": "Blue"
+      },
+      {
+       "name": "Ajay Bharti",
+       "house": "White"
+      },
+      {
+       "name": "Nitin Bisht",
+       "house": "White"
+      }
+     ]
+    }
+   ],
+   "champion": null,
+   "runnerUp": null
+  },
+  {
+   "id": "carrom-women",
+   "sport": "Carrom",
+   "category": "Women",
+   "stages": [
+    {
+     "name": "Entered",
+     "players": [
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Shinny Dsouza",
+       "house": "White"
+      },
+      {
+       "name": "Aishwarya Theurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashwini Mule",
+       "house": "Green"
+      },
+      {
+       "name": "Priyanka Dunbale",
+       "house": "White"
+      },
+      {
+       "name": "Priyanshi Dhimole",
+       "house": "Red"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Aishwarya Choudhary",
+       "house": "Green"
+      },
+      {
+       "name": "Smita Jadhav",
+       "house": "White"
+      },
+      {
+       "name": "Manisha Khotele",
+       "house": "Red"
+      },
+      {
+       "name": "Madhuri Nikam",
+       "house": "Green"
+      },
+      {
+       "name": "Sneha Patil",
+       "house": "White"
+      },
+      {
+       "name": "Amrapali Shirsat",
+       "house": "Red"
+      },
+      {
+       "name": "Kalyani Tipare",
+       "house": "Green"
+      },
+      {
+       "name": "Apurva Mehar",
+       "house": "White"
+      },
+      {
+       "name": "Manjushri Gaikwad",
+       "house": "Red"
+      },
+      {
+       "name": "Suvarna Rajhans",
+       "house": "Green"
+      },
+      {
+       "name": "Pallavi Bange",
+       "house": "White"
+      },
+      {
+       "name": "Poonam Sutar",
+       "house": "Red"
+      },
+      {
+       "name": "Kiran Ahire",
+       "house": "Green"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Risha Pachpute",
+       "house": "Red"
+      },
+      {
+       "name": "Sakshi Deshmukh",
+       "house": "White"
+      },
+      {
+       "name": "Trupti Mane",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashwini Mule",
+       "house": "Green"
+      },
+      {
+       "name": "Manjushri Gaikwad",
+       "house": "Red"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Priyanshi Dhimole",
+       "house": "Red"
+      },
+      {
+       "name": "Sneha Patil",
+       "house": "White"
+      },
+      {
+       "name": "Apurva Mehar",
+       "house": "White"
+      },
+      {
+       "name": "Amarpali Shirsat",
+       "house": "Red"
+      },
+      {
+       "name": "Aishwarya Theurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Smita Jadhav",
+       "house": "White"
+      },
+      {
+       "name": "Risha Pachpute",
+       "house": "Red"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Manjushri Gaikwad",
+       "house": "Red"
+      },
+      {
+       "name": "Sneha Patil",
+       "house": "White"
+      },
+      {
+       "name": "Aishwarya Theurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Apurva Mehar",
+       "house": "White"
+      },
+      {
+       "name": "Amarpali Shirsat",
+       "house": "Red"
+      },
+      {
+       "name": "Smita Jadhav",
+       "house": "White"
+      },
+      {
+       "name": "Ashwini Mule",
+       "house": "Green"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Priyanshi Dhimole",
+       "house": "Red"
+      },
+      {
+       "name": "Risha Pachpute",
+       "house": "Red"
+      }
+     ]
+    },
+    {
+     "name": "Round 3",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Manjushri Gaikwad",
+       "house": "Red"
+      },
+      {
+       "name": "Risha Pachpute",
+       "house": "Red"
+      },
+      {
+       "name": "Smita Jadhav",
+       "house": "White"
+      },
+      {
+       "name": "Ashwini Mule",
+       "house": "Green"
+      },
+      {
+       "name": "Aishwarya Theurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Smita Jadhav",
+       "house": "White"
+      },
+      {
+       "name": "Aishwarya Theurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      }
+     ]
+    }
+   ],
+   "champion": {
+    "name": "Ankita Agrawal",
+    "house": "Blue"
+   },
+   "runnerUp": {
+    "name": "Vaishali Patil",
+    "house": "Blue"
+   }
+  },
+  {
+   "id": "jenga-men",
+   "sport": "Jenga",
+   "category": "Men",
+   "stages": [
+    {
+     "name": "Entered",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Shripad Patil",
+       "house": "White"
+      },
+      {
+       "name": "Swapnil Mali",
+       "house": "Red"
+      },
+      {
+       "name": "Hiraman Chorghade",
+       "house": "Blue"
+      },
+      {
+       "name": "Vinayak Yamgar",
+       "house": "Green"
+      },
+      {
+       "name": "Ravindra Shinde",
+       "house": "White"
+      },
+      {
+       "name": "Shekhar Agarwal",
+       "house": "Red"
+      },
+      {
+       "name": "Ajinkya Shinde",
+       "house": "Blue"
+      },
+      {
+       "name": "Nishant Agarwal",
+       "house": "Green"
+      },
+      {
+       "name": "Vishal Godse",
+       "house": "White"
+      },
+      {
+       "name": "Samadhan Patil",
+       "house": "Red"
+      },
+      {
+       "name": "Dishant Arora",
+       "house": "Blue"
+      },
+      {
+       "name": "Vikram Makhare",
+       "house": "Green"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Amit Khopade",
+       "house": "Red"
+      },
+      {
+       "name": "Abhijeet More",
+       "house": "Blue"
+      },
+      {
+       "name": "Jalindar Katke",
+       "house": "Green"
+      },
+      {
+       "name": "Omkar Gore",
+       "house": "White"
+      },
+      {
+       "name": "Balasaheb Chandanshive",
+       "house": "Red"
+      },
+      {
+       "name": "Mohit Shetty",
+       "house": "Blue"
+      },
+      {
+       "name": "Mayank Maheshwari",
+       "house": "Green"
+      },
+      {
+       "name": "Krishnat Chorge",
+       "house": "White"
+      },
+      {
+       "name": "Tanaji Kadam",
+       "house": "Red"
+      },
+      {
+       "name": "Mandar Hiremath",
+       "house": "Blue"
+      },
+      {
+       "name": "Yogesh Aher",
+       "house": "Green"
+      },
+      {
+       "name": "Satyam Kesarwani",
+       "house": "White"
+      },
+      {
+       "name": "Rahul Wabale",
+       "house": "Red"
+      },
+      {
+       "name": "Sonalkumar Padwalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Shridhar Patil",
+       "house": "White"
+      },
+      {
+       "name": "Rahul Kapurkar",
+       "house": "Red"
+      },
+      {
+       "name": "Mohammadali Aba",
+       "house": "Blue"
+      },
+      {
+       "name": "Jayesh Mahajan",
+       "house": "White"
+      },
+      {
+       "name": "Nitin Lokhande",
+       "house": "Red"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Pranav Runwal",
+       "house": "White"
+      },
+      {
+       "name": "Devendrasingh Thakur",
+       "house": "Red"
+      },
+      {
+       "name": "Vilas Jadhav",
+       "house": "Blue"
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Sushant Navale",
+       "house": "Red"
+      },
+      {
+       "name": "Amit Kulkarni",
+       "house": "Blue"
+      },
+      {
+       "name": "Pravin Dhole",
+       "house": "White"
+      },
+      {
+       "name": "Suraj Patil",
+       "house": "Red"
+      },
+      {
+       "name": "Vrushal Fadanvis",
+       "house": "White"
+      },
+      {
+       "name": "Aniket Gadekar",
+       "house": "Red"
+      },
+      {
+       "name": "Saddat Bisati",
+       "house": "Red"
+      },
+      {
+       "name": "Sagar Vipradas",
+       "house": "Red"
+      }
+     ]
+    },
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Ajinkya Shinde",
+       "house": "Blue"
+      },
+      {
+       "name": "Nishant Agarwal",
+       "house": "Green"
+      },
+      {
+       "name": "Sonalkumar Padwalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Omkar Gore",
+       "house": "White"
+      },
+      {
+       "name": "Shridhar Adusmalli",
+       "house": "Blue"
+      },
+      {
+       "name": "Vrushal Fadanvis",
+       "house": "White"
+      },
+      {
+       "name": "Swapnil Mali",
+       "house": "Red"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Mohit Shetty",
+       "house": "Blue"
+      },
+      {
+       "name": "Amit Khopade",
+       "house": "Red"
+      },
+      {
+       "name": "Amir Raza Shaikh",
+       "house": "White"
+      },
+      {
+       "name": "Tanaji Kadam",
+       "house": "Red"
+      },
+      {
+       "name": "Ravindra Shinde",
+       "house": "White"
+      },
+      {
+       "name": "Pranav Runwal",
+       "house": "White"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Jalindar Katke",
+       "house": "Green"
+      },
+      {
+       "name": "Nitin Lokhande",
+       "house": "Red"
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Arun Kale",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashok Salvi",
+       "house": "Blue"
+      },
+      {
+       "name": "Prithiviraj Kaldate",
+       "house": "Red"
+      },
+      {
+       "name": "Vikram Makhare",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Sonalkumar Padwalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Shridhar Adusmalli",
+       "house": "Blue"
+      },
+      {
+       "name": "Swapnil Mali",
+       "house": "Red"
+      },
+      {
+       "name": "Manoj Birhade",
+       "house": "White"
+      },
+      {
+       "name": "Amit Khopade",
+       "house": "Red"
+      },
+      {
+       "name": "Ravindra Shinde",
+       "house": "White"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Jalindar Katke",
+       "house": "Green"
+      },
+      {
+       "name": "Abhijit Patil",
+       "house": "White"
+      },
+      {
+       "name": "Ashok Salvi",
+       "house": "Blue"
+      },
+      {
+       "name": "Vikram Makhare",
+       "house": "Green"
+      }
+     ]
+    },
+    {
+     "name": "Round 3",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Swapnil Mali",
+       "house": "Red"
+      },
+      {
+       "name": "Amit Khopade",
+       "house": "Red"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Jalindar Katke",
+       "house": "Green"
+      },
+      {
+       "name": "Ashok Salvi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashok Salvi",
+       "house": "Blue"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Nitin Sapnar",
+       "house": "Green"
+      },
+      {
+       "name": "Yogesh Nimbalkar",
+       "house": "Blue"
+      }
+     ]
+    }
+   ],
+   "champion": {
+    "name": "Yogesh Nimbalkar",
+    "house": "Blue"
+   },
+   "runnerUp": {
+    "name": "Nitin Patil",
+    "house": "Green"
+   }
+  },
+  {
+   "id": "jenga-women",
+   "sport": "Jenga",
+   "category": "Women",
+   "stages": [
+    {
+     "name": "Entered",
+     "players": [
+      {
+       "name": "Rashmi Naskar",
+       "house": "Green"
+      },
+      {
+       "name": "Sneha Patil",
+       "house": "White"
+      },
+      {
+       "name": "Niharika Gaur",
+       "house": "Red"
+      },
+      {
+       "name": "Pournima Khollam",
+       "house": "Blue"
+      },
+      {
+       "name": "Aishwarya Choudhary",
+       "house": "Green"
+      },
+      {
+       "name": "Sapana Hushare",
+       "house": "White"
+      },
+      {
+       "name": "Risha Pachpute",
+       "house": "Red"
+      },
+      {
+       "name": "Kalyani Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Neha Badgujar",
+       "house": "Green"
+      },
+      {
+       "name": "Trupti Mane",
+       "house": "White"
+      },
+      {
+       "name": "Rani Bhosale",
+       "house": "Red"
+      },
+      {
+       "name": "Pushpanjali Nishandar",
+       "house": "Blue"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Pratiksha Pujari",
+       "house": "White"
+      },
+      {
+       "name": "Poonam Sutar",
+       "house": "Red"
+      },
+      {
+       "name": "Aakanksha Rumde",
+       "house": "Blue"
+      },
+      {
+       "name": "Priyashethu Shetty",
+       "house": "Green"
+      },
+      {
+       "name": "Minal Surwase",
+       "house": "White"
+      },
+      {
+       "name": "Divya Gugale",
+       "house": "Red"
+      },
+      {
+       "name": "Saee Mali",
+       "house": "Blue"
+      },
+      {
+       "name": "Radhika Patel",
+       "house": "Green"
+      },
+      {
+       "name": "Sakshi Deshmukh",
+       "house": "White"
+      },
+      {
+       "name": "Sabura Khan",
+       "house": "Red"
+      },
+      {
+       "name": "Krina Vadodariya",
+       "house": "Blue"
+      },
+      {
+       "name": "Kalyani Tipare",
+       "house": "Green"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      },
+      {
+       "name": "Aishwarya Bhalgat",
+       "house": "Red"
+      },
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Anagha Joshi",
+       "house": "Green"
+      },
+      {
+       "name": "Priyanka Marathe",
+       "house": "White"
+      },
+      {
+       "name": "Pooja Mane",
+       "house": "Red"
+      },
+      {
+       "name": "Yogita Desale",
+       "house": "Blue"
+      },
+      {
+       "name": "Nutan Hedgekar",
+       "house": "Green"
+      },
+      {
+       "name": "Smita Jadav",
+       "house": "White"
+      },
+      {
+       "name": "Manjushri Gaikwad",
+       "house": "Red"
+      },
+      {
+       "name": "Aditi Sabnis",
+       "house": "Blue"
+      },
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Round 1",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Pramila Jadav",
+       "house": "White"
+      },
+      {
+       "name": "Neha Badgujar",
+       "house": "Green"
+      },
+      {
+       "name": "Niharika Gaur",
+       "house": "Red"
+      },
+      {
+       "name": "Rashmi Naskar",
+       "house": "Green"
+      },
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      },
+      {
+       "name": "Prachi Kashikar",
+       "house": "Green"
+      },
+      {
+       "name": "Trupti Mane",
+       "house": "White"
+      },
+      {
+       "name": "Pooja Mane",
+       "house": "Red"
+      },
+      {
+       "name": "Sapana Hushare",
+       "house": "White"
+      },
+      {
+       "name": "Bhumika Rajpurohit",
+       "house": "Blue"
+      },
+      {
+       "name": "Sanjana Sable",
+       "house": "Red"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Ashwiraya Thukar",
+       "house": "Red"
+      },
+      {
+       "name": "Madhuri Nikam",
+       "house": "Green"
+      },
+      {
+       "name": "Sakshi Deshmukh",
+       "house": "White"
+      },
+      {
+       "name": "Kalyani Tipare",
+       "house": "Green"
+      },
+      {
+       "name": "Rani Bhosale",
+       "house": "Red"
+      },
+      {
+       "name": "Monika Jambhulkar",
+       "house": "Green"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Round 2",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Neha Badgujar",
+       "house": "Green"
+      },
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      },
+      {
+       "name": "Prachi Kashikar",
+       "house": "Green"
+      },
+      {
+       "name": "Sapana Hushare",
+       "house": "White"
+      },
+      {
+       "name": "Bhumika Rajpurohit",
+       "house": "Blue"
+      },
+      {
+       "name": "Vaishali Patil",
+       "house": "Blue"
+      },
+      {
+       "name": "Sakshi Deshmukh",
+       "house": "White"
+      },
+      {
+       "name": "Kalyani Tipare",
+       "house": "Green"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Semi Finals",
+     "players": [
+      {
+       "name": "Ankita Agrawal",
+       "house": "Blue"
+      },
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      },
+      {
+       "name": "Sakshi Deshmukh",
+       "house": "White"
+      },
+      {
+       "name": "Sapana Hushare",
+       "house": "White"
+      },
+      {
+       "name": "Ambika Tipare",
+       "house": "White"
+      }
+     ]
+    },
+    {
+     "name": "Final",
+     "players": [
+      {
+       "name": "Sneha Deshpande",
+       "house": "White"
+      },
+      {
+       "name": "Sapana Hushare",
+       "house": "White"
+      }
+     ]
+    }
+   ],
+   "champion": null,
+   "runnerUp": null
+  }
+ ]
+}
