@@ -1055,8 +1055,14 @@
      ]
     }
    ],
-   "champion": null,
-   "runnerUp": null
+   "champion": {
+    "name": "Ajay Bharti",
+    "house": "White"
+   },
+   "runnerUp": {
+    "name": "Rohit Mane",
+    "house": "Blue"
+   }
   },
   {
    "id": "carrom-women",
