@@ -279,8 +279,14 @@
      ]
     }
    ],
-   "champion": null,
-   "runnerUp": null
+   "champion": {
+    "name": "Ankit Tyagi",
+    "house": "Blue"
+   },
+   "runnerUp": {
+    "name": "Satyam Kesarwani",
+    "house": "White"
+   }
   },
   {
    "id": "tt-women",
@@ -404,8 +410,14 @@
      ]
     }
    ],
-   "champion": null,
-   "runnerUp": null
+   "champion": {
+    "name": "Aditi Sabnis",
+    "house": "Blue"
+   },
+   "runnerUp": {
+    "name": "Shristi painaik",
+    "house": "Green"
+   }
   },
   {
    "id": "carrom-men",
@@ -1748,7 +1760,7 @@
     "house": "Blue"
    },
    "runnerUp": {
-    "name": "Nitin Patil",
+    "name": "Nitin Sapnar",
     "house": "Green"
    }
   },
@@ -2079,8 +2091,14 @@
      ]
     }
    ],
-   "champion": null,
-   "runnerUp": null
+   "champion": {
+    "name": "Sapana Hushare",
+    "house": "White"
+   },
+   "runnerUp": {
+    "name": "Sneha Deshpande",
+    "house": "White"
+   }
   }
  ]
 }

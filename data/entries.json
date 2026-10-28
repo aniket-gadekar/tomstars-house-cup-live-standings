@@ -1,5 +1,25 @@
 [
  {
+  "id": "2ed41412-9eb2-4314-8e98-d429163eb815",
+  "house": "White",
+  "points": 50,
+  "reason": "Jenga (Women) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Sneha Deshpande",
+  "timestamp": "2026-10-28T12:00:01"
+ },
+ {
+  "id": "1a379f6b-691f-4f1b-8d5c-661a1eb8509b",
+  "house": "White",
+  "points": 100,
+  "reason": "Jenga (Women) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Sapana Hushare",
+  "timestamp": "2026-10-28T12:00:00"
+ },
+ {
   "id": "9674233b-0785-4946-86ff-6b354171797a",
   "house": "Blue",
   "points": 50,
@@ -26,7 +46,7 @@
   "reason": "Jenga (Men) - Final Runner Up",
   "category": "Olympia",
   "participantCount": 1,
-  "participantNames": "Nitin Patil",
+  "participantNames": "Nitin Sapnar",
   "timestamp": "2026-10-27T13:00:01"
  },
  {
@@ -2950,6 +2970,46 @@
   "timestamp": "2026-10-27T12:00:00"
  },
  {
+  "id": "05d48971-6e02-4235-9fa1-2ad876aecf0d",
+  "house": "White",
+  "points": 50,
+  "reason": "Table Tennis (Men) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Satyam Kesarwani",
+  "timestamp": "2026-10-26T18:30:01"
+ },
+ {
+  "id": "ce404da6-66ba-4cae-85df-fc2cbd30ab96",
+  "house": "Blue",
+  "points": 100,
+  "reason": "Table Tennis (Men) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ankit Tyagi",
+  "timestamp": "2026-10-26T18:30:00"
+ },
+ {
+  "id": "d78f9b7b-0b09-4a4c-ab0f-17abe9c6b7d9",
+  "house": "Green",
+  "points": 50,
+  "reason": "Table Tennis (Women) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Shristi Painaik",
+  "timestamp": "2026-10-26T18:00:01"
+ },
+ {
+  "id": "239ce6c2-8595-48bc-8766-acd6fe325039",
+  "house": "Blue",
+  "points": 100,
+  "reason": "Table Tennis (Women) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Aditi Sabnis",
+  "timestamp": "2026-10-26T18:00:00"
+ },
+ {
   "id": "f45dda16-f570-486b-8e66-fe9a91fbb4b3",
   "house": "Blue",
   "points": 50,
@@ -2988,6 +3048,46 @@
   "participantCount": 1,
   "participantNames": "Ankit Tyagi",
   "timestamp": "2026-10-26T17:00:00"
+ },
+ {
+  "id": "ac98f496-df9f-4471-a610-c7ba188c0935",
+  "house": "Green",
+  "points": 50,
+  "reason": "Chess (Women) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Kalyani Tipare",
+  "timestamp": "2026-10-26T16:30:01"
+ },
+ {
+  "id": "c96f37b1-ecb1-43cc-b45a-82bbe35be8fe",
+  "house": "White",
+  "points": 100,
+  "reason": "Chess (Women) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ambika Tipare",
+  "timestamp": "2026-10-26T16:30:00"
+ },
+ {
+  "id": "6275dc52-2691-4496-9940-d7d874807dc1",
+  "house": "White",
+  "points": 50,
+  "reason": "Chess (Men) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ajay Bharti",
+  "timestamp": "2026-10-26T16:00:01"
+ },
+ {
+  "id": "2a5ccbb1-1c2d-4d70-8908-fe8f03222c22",
+  "house": "Blue",
+  "points": 100,
+  "reason": "Chess (Men) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ankit Tyagi",
+  "timestamp": "2026-10-26T16:00:00"
  },
  {
   "id": "6eb545ad-816c-4e1c-8aa8-c8915aba2d09",
