@@ -20,6 +20,26 @@
   "timestamp": "2026-10-28T12:00:00"
  },
  {
+  "id": "fde83fe5-fa00-4bd9-8f52-ce8183bb07cf",
+  "house": "Blue",
+  "points": 50,
+  "reason": "Carrom (Men) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Rohit Mane",
+  "timestamp": "2026-10-27T17:00:01"
+ },
+ {
+  "id": "4f84bedf-4464-4a2d-800a-ebfc823ef7a4",
+  "house": "White",
+  "points": 100,
+  "reason": "Carrom (Men) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ajay Bharti",
+  "timestamp": "2026-10-27T17:00:00"
+ },
+ {
   "id": "9674233b-0785-4946-86ff-6b354171797a",
   "house": "Blue",
   "points": 50,
@@ -3088,6 +3108,46 @@
   "participantCount": 1,
   "participantNames": "Ankit Tyagi",
   "timestamp": "2026-10-26T16:00:00"
+ },
+ {
+  "id": "998fc53f-b746-4686-bb1c-228c45f246d6",
+  "house": "Green",
+  "points": 50,
+  "reason": "Darts (Women) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Preeti Kerkar",
+  "timestamp": "2026-10-26T15:30:01"
+ },
+ {
+  "id": "19374d2c-68eb-4a5a-8ba1-1061682d69f5",
+  "house": "White",
+  "points": 100,
+  "reason": "Darts (Women) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Sneha Deshpande",
+  "timestamp": "2026-10-26T15:30:00"
+ },
+ {
+  "id": "4edbcc6b-eaf6-4a12-8472-c0e5474fb2e5",
+  "house": "Green",
+  "points": 50,
+  "reason": "Darts (Men) - Final Runner Up",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Vinod Balesgol",
+  "timestamp": "2026-10-26T15:00:01"
+ },
+ {
+  "id": "c448a7c7-7e39-4632-aed4-eab40c1f9fe5",
+  "house": "Red",
+  "points": 100,
+  "reason": "Darts (Men) - Final Winner",
+  "category": "Olympia",
+  "participantCount": 1,
+  "participantNames": "Ritesh Nalawade",
+  "timestamp": "2026-10-26T15:00:00"
  },
  {
   "id": "6eb545ad-816c-4e1c-8aa8-c8915aba2d09",
